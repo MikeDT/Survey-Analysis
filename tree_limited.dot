@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="1.7 <= 0.88\ngini = 0.72\nsamples = 2349\nvalue = [253, 740, 617, 739]\nclass = 4.0", fillcolor="#47e53900"] ;
+1 [label="2.1.1 <= 0.12\ngini = 0.73\nsamples = 2035\nvalue = [249, 680, 556, 550]\nclass = 4.0", fillcolor="#47e53915"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="1.7 <= 0.12\ngini = 0.73\nsamples = 456\nvalue = [142, 131, 53, 130]\nclass = 2.0", fillcolor="#e5813909"] ;
+1 -> 2 ;
+3 [label="gini = 0.63\nsamples = 145\nvalue = [76, 29, 8, 32]\nclass = 2.0", fillcolor="#e5813963"] ;
+2 -> 3 ;
+4 [label="gini = 0.73\nsamples = 311\nvalue = [66, 102, 45, 98]\nclass = 4.0", fillcolor="#47e53905"] ;
+2 -> 4 ;
+5 [label="1.8 <= 0.62\ngini = 0.7\nsamples = 1579\nvalue = [107, 549, 503, 420]\nclass = 4.0", fillcolor="#47e5390b"] ;
+1 -> 5 ;
+6 [label="gini = 0.7\nsamples = 581\nvalue = [60, 239, 132, 150]\nclass = 4.0", fillcolor="#47e53935"] ;
+5 -> 6 ;
+7 [label="gini = 0.69\nsamples = 998\nvalue = [47, 310, 371, 270]\nclass = 0.0", fillcolor="#399de517"] ;
+5 -> 7 ;
+8 [label="2.1.1 <= 0.62\ngini = 0.56\nsamples = 314\nvalue = [4, 60, 61, 189]\nclass = 3.0", fillcolor="#d739e581"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="2.4 <= 0.62\ngini = 0.67\nsamples = 112\nvalue = [4, 33, 27, 48]\nclass = 3.0", fillcolor="#d739e530"] ;
+8 -> 9 ;
+10 [label="gini = 0.65\nsamples = 85\nvalue = [3, 26, 16, 40]\nclass = 3.0", fillcolor="#d739e53d"] ;
+9 -> 10 ;
+11 [label="gini = 0.68\nsamples = 27\nvalue = [1, 7, 11, 8]\nclass = 0.0", fillcolor="#399de528"] ;
+9 -> 11 ;
+12 [label="2.2 <= 0.88\ngini = 0.47\nsamples = 202\nvalue = [0, 27, 34, 141]\nclass = 3.0", fillcolor="#d739e5a2"] ;
+8 -> 12 ;
+13 [label="gini = 0.57\nsamples = 116\nvalue = [0, 22, 26, 68]\nclass = 3.0", fillcolor="#d739e577"] ;
+12 -> 13 ;
+14 [label="gini = 0.27\nsamples = 86\nvalue = [0, 5, 8, 73]\nclass = 3.0", fillcolor="#d739e5d4"] ;
+12 -> 14 ;
+}
